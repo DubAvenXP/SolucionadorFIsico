@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./dist/styles.css" />
 </head>
 
@@ -34,8 +35,8 @@
     </nav>
 
     <section class="container">
-
-        <div class="pt-5 ml-1 left">
+        <h1 class="pt-5">Caída libre</h1>
+        <div class="pt-3 ml-1 left">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, similique. Quasi, non maiores assumenda
                 nostrum id dolorum autem quas dolor pariatur, dolores inventore ut adipisci amet saepe voluptatibus
@@ -43,23 +44,11 @@
             </p>
         </div>
         <hr>
-        <div class="pt-5 form-group left right">
-            <div class="row">
-                <div class="col mb-3">
-                    <label for="direction">¿Hacia donde va el objeto?</label>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <select name="direction" id="direction" class="input-group-text">
-                                <option value="up">Arriba</option>
-                                <option value="down" selected>Abajo</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
+
+        <div class="pt-3 form-group left right">
+            <div class="form-row">
                 <div class="col">
-                    <label for="initialSpeed">Velocidad inicial (Vo)</label>
+                    <label for="initialSpeed" class="col">Velocidad inicial (Vo)</label>
                     <div class="input-group mb-3 col">
                         <input class="form-control" type="number" name="initialSpeed" id="initialSpeed" value="0" />
                         <div class="input-group-prepend">
@@ -68,7 +57,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <label for="finalSpeed">Velocidad final (Vf)</label>
+                    <label for="finalSpeed" class="col">Velocidad final (Vf)</label>
                     <div class="input-group mb-3 col">
                         <input class="form-control" type="number" name="finalSpeed" id="finalSpeed" />
                         <div class="input-group-prepend">
@@ -86,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="form-row">
                 <div class="col">
                     <label for="time" class="col">Tiempo</label>
                     <div class="input-group mb-3 col">
@@ -106,9 +95,13 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary" id="calculate">calcular</button>
+            <div class="col">
+                <button class="btn btn-primary " id="calculate">Reiniciar</button>
+                <button class="btn btn-primary " id="calculate">Reiniciar</button>
+            </div>
         </div>
     </section>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
