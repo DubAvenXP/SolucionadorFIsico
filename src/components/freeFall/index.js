@@ -9,13 +9,13 @@ const reactiveInputVf = () => {
 }
 
 const reactiveInputVo = () => {
-    const direction = document.getElementById('direction');
+    const direction = document.getElementById('direction').value;
     const voInput = parseFloat(document.getElementById("initialSpeed").value);
     document.getElementById("time").addEventListener('keyup', () => {
         const tInput = parseFloat(document.getElementById("time").value);
-
-        document.getElementById('finalSpeed').value = vf(voInput, tInput);
-
+        direction === 'down' ?
+            document.getElementById('finalSpeed').value = vf(voInput, tInput) :
+            document.getElementById('finalSpeed').value = inverseVf(voInput, tInput);
         const vfInput = parseFloat(document.getElementById("finalSpeed").value);
         document.getElementById('height').value = y(voInput, vfInput, tInput);
     });
