@@ -8,13 +8,14 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-// .container{
-//     display: flex;
-//     & .left{
-//         width: 50%;
-//         margin-right: 20px;
-//     }
-//     & .right{
-//         width: 50%;
-//     }
-// }
+#formulas-container{
+    display: flex;
+    flex-direction: column-reverse;
+    & figure {
+        width: 500px;
+        height: auto;
+    }
+    & img {
+        width: 100%;
+    }
+}
