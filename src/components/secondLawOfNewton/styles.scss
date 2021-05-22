@@ -1,0 +1,21 @@
+// body{
+//     background-color: red;
+// }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#formulas-container{
+    display: flex;
+    flex-direction: column-reverse;
+    & figure {
+        width: 500px;
+        height: auto;
+    }
+    & img {
+        width: 100%;
+    }
+}
