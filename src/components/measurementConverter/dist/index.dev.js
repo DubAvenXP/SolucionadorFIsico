@@ -75,7 +75,8 @@ var reactiveConversor = function reactiveConversor(equivalent) {
 
 $unitSelected.addEventListener("change", function () {
   var unitToLoad = $unitSelected.value;
-  clearInputs(); //clearSelects([$convertedUnit, $unitToConvert]);
+  clearInputs();
+  clearSelects([$convertedUnit, $unitToConvert]);
 
   if (unitToLoad !== randomText) {
     var options = Object.keys(_measurementUnits.unit[unitToLoad]);

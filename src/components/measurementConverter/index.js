@@ -70,7 +70,7 @@ const reactiveConversor = (equivalent) => {
 $unitSelected.addEventListener("change", () => {
     const unitToLoad = $unitSelected.value;
     clearInputs();
-    //clearSelects([$convertedUnit, $unitToConvert]);
+    clearSelects([$convertedUnit, $unitToConvert]);
     if (unitToLoad !== randomText) {
         let options = Object.keys(unit[unitToLoad]);
         const translatedOptions = options.map((option) => {

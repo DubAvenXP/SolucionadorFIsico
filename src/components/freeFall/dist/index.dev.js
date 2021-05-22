@@ -78,3 +78,6 @@ document.getElementById("time").addEventListener('keyup', reactiveInputTime);
 document.getElementById("finalSpeed").addEventListener('keyup', reactiveInputVf);
 document.getElementById("initialSpeed").addEventListener('keyup', reactiveInputVo);
 document.getElementById("direction").addEventListener('click', reactiveInputVo);
+document.getElementById('reiniciar').addEventListener('click', function () {
+  location.reload();
+});

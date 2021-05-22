@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/styles.css">
 </head>
 
 <body>
@@ -39,10 +40,17 @@
         <h1 class="pt-5">Segunda ley de Newton</h1>
         <div class="pt-3 ml-1 left">
             <p>
+            <blockquote>
                 La Segunda Ley de Newton también conocida como Ley Fundamental de la Dinámica, es la que determina una
                 relación proporcional entre fuerza y variación de la cantidad de movimiento o momento lineal de un
                 cuerpo. Dicho de otra forma, la fuerza es directamente proporcional a la masa y a la aceleración de un
                 cuerpo.
+            </blockquote>
+            <strong>
+                Esta calculadora funciona de forma totalmente reactiva, al ingresar el valor de un input esta
+                automaticamente calcula los resultados de las variables restantes. En la parte inferior se muestran las
+                formulas utilizadas para generar dichos resultados.
+            </strong>
             </p>
         </div>
         <hr>
@@ -120,12 +128,10 @@
             <div class="col">
                 <button class="btn btn-primary " id="calculateAcceleration">Obtener acelerecion con tiempo y
                     distancia</button>
+                <button class="btn btn-primary " id="reiniciar">reiniciar</button>
             </div>
-            <div>
-                <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{52}{2}" target="_blank"><img
-                        src='https://latex.codecogs.com/gif.latex?\dpi{200}&space;V_{f}=&space;V_{0}&space;\pm&space;gt'
-                        title="\frac{52}{2}" />
-                </a>
+            <h3 class="pt-4">Historial (formulas):</h3>
+            <div class="col container pt-2" id="formulas-container">
             </div>
         </div>
 
@@ -203,6 +209,7 @@
 
             <div class="col">
                 <button class="btn btn-primary " id="calcular">Calcular</button>
+                <button class="btn btn-primary " id="reiniciar2">reiniciar</button>
             </div>
         </div>
 
